@@ -515,7 +515,7 @@ def decode_protobuf(binary):
 
 def fetch_player_info(uid):
     try:
-        url = f"https://stargamerff.qzz.io/accinfo?uid={uid}"
+        url = f"https://mafuuuu-info-api.vercel.app/mafu-info?uid={uid}"
         response = requests.get(url, timeout=20)
         if response.status_code == 200:
             data = response.json()
